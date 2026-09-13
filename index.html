@@ -69,12 +69,11 @@
             margin: 0;
         }
 
-            .hur54b {
-
-        padding-top: 8px !important; /* Adjust top padding if needed */
-        padding-bottom: 8px !important; /* Adjust bottom padding if needed */
-        padding-left: 0px !important; /* Adjust left padding if needed */
-        padding-right: 0px !important; /* Adjust right padding if needed */
+        .hur54b {
+            padding-top: 8px !important;
+            padding-bottom: 8px !important;
+            padding-left: 0px !important;
+            padding-right: 0px !important;
         }
 
         .Xfsokf {
@@ -463,13 +462,109 @@
             }
         }
 
-        /* --- ABOUT US SECTION (NO IMAGES OR PARAGRAPHS) --- */
+        /* --- ABOUT US SECTION --- */
         .about-preview-section {
             background: var(--light-about-gradient);
             padding: 50px 0;
             color: #000000;
             border-top: 1px solid rgba(106, 17, 203, 0.08);
             border-bottom: 1px solid rgba(106, 17, 203, 0.08);
+        }
+
+        /* --- GOOGLE REVIEWS SECTION --- */
+        .google-reviews-section {
+            background: #ffffff;
+            padding: 60px 0;
+            border-bottom: 1px solid rgba(106, 17, 203, 0.08);
+        }
+
+        .review-card {
+            background: #f8f9fa;
+            border: 1px solid #e2d4f3;
+            border-radius: 16px;
+            padding: 24px;
+            height: 100%;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .review-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 10px 20px rgba(106, 17, 203, 0.1);
+        }
+
+        .review-stars {
+            color: #f39c12;
+            font-size: 0.95rem;
+            margin-bottom: 12px;
+        }
+
+        .review-text {
+            font-size: 0.95rem;
+            color: #444444;
+            line-height: 1.6;
+            font-style: italic;
+            margin-bottom: 20px;
+            flex-grow: 1;
+        }
+
+        .reviewer-info {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            border-top: 1px solid #eee;
+            padding-top: 12px;
+        }
+
+        .reviewer-avatar {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: var(--violet-color);
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 600;
+            font-size: 1rem;
+            flex-shrink: 0;
+        }
+
+        .reviewer-details h6 {
+            margin: 0;
+            font-weight: 600;
+            font-size: 0.95rem;
+            color: #1e0036;
+        }
+
+        .reviewer-details span {
+            font-size: 0.8rem;
+            color: #777777;
+        }
+
+        .google-badge-btn {
+            background: #ffffff;
+            color: #444444;
+            border: 1px solid #ccd1d9;
+            font-weight: 600;
+            padding: 10px 24px;
+            border-radius: 50px;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            text-decoration: none;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+            transition: all 0.3s ease;
+        }
+
+        .google-badge-btn:hover {
+            background: #f8f9fa;
+            color: #111111;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            transform: translateY(-2px);
         }
 
         /* --- CONTACT SECTION STYLING --- */
@@ -528,13 +623,16 @@
                         <a class="nav-link" href="index.html">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="experience.html">Student Experiences</a>
+                        <a class="nav-link" href="#services">Services</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="center-tour.html">Center Tour</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#services">Services</a>
+                        <a class="nav-link" href="experience.html">Student Experiences</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#reviews">Google Reviews</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#about-preview">About Us</a>
@@ -734,6 +832,94 @@
             <a href="about.html" class="btn btn-primary rounded-pill px-4 py-2 font-weight-bold">
                 Learn More About Us & Our Gurus <i class="fa-solid fa-arrow-right ms-2"></i>
             </a>
+        </div>
+    </section>
+
+    <!-- GOOGLE REVIEWS SECTION -->
+    <section id="reviews" class="google-reviews-section">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold" style="color: #1e0036;">Google Reviews</h2>
+                <p class="text-muted">What our clients and students are saying about their healing experiences</p>
+                <!-- Optional link/button to your Google Business Profile review link -->
+                <a href="https://share.google/4TRALiEv0xsrs6Gzq" target="_blank" rel="noopener noreferrer" class="google-badge-btn mt-2">
+                    <i class="fa-brands fa-google text-danger"></i> Review Us on Google
+                </a>
+            </div>
+
+            <div class="row g-4">
+                <!-- Sample Review Card 1 -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="review-card">
+                        <div>
+                            <div class="review-stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <p class="review-text">"I have had amazing success with Jaswinder and his gift. I feel lighter and more alive than I have felt in years. I have beef to see Jaswinder four times and each time I leave I feel better and better each time. My mood has improved and I feel more balanced mentally and physically highly recommend"</p>
+                        </div>
+                        <div class="reviewer-info">
+                            <div class="reviewer-avatar">S</div>
+                            <div class="reviewer-details">
+                                <h6>Grant Cairns</h6>
+                                <span>Google Reviewer</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sample Review Card 2 -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="review-card">
+                        <div>
+                            <div class="review-stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <p class="review-text">"Learning reiki is life changing experience, Jaswinder sir have very deep spirtual depth. Deep sense of life will grow at CHA.Positive atmosphere at CHA will give boost to body energy, One who want to discover themself must visit CHA."</p>
+                        </div>
+                        <div class="reviewer-info">
+                            <div class="reviewer-avatar">R</div>
+                            <div class="reviewer-details">
+                                <h6>Sarwara Gagan</h6>
+                                <span>Google Reviewer</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sample Review Card 3 -->
+                <div class="col-12 col-md-6 col-lg-4 mx-auto">
+                    <div class="review-card">
+                        <div>
+                            <div class="review-stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <p class="review-text">"Master Jaswinder is a very compassionate and truly gifted man. In my first session he helped me enormously to relive all my stress and health problems , and I am very grateful for that. He is a light at the end of the tunnel. I also recently learned level 1 reiki. He thought me well all aspects off reiki. You will not find easy teacher as honest and knowledgeable as him. You really have to experience and see it to believe it. He is always available and at his place you feel welcomed and comfortable. I will continue to visit him and learn as much as I can from him. Please when you choose your master be careful as it is hard to find one as him. Thank you master Jaswinder 🙏"</p>
+                        </div>
+                        <div class="reviewer-info">
+                            <div class="reviewer-avatar">A</div>
+                            <div class="reviewer-details">
+                                <h6>Nevia Cavalic</h6>
+                                <span>Google Reviewer</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Alternatively, if using a third-party or embedded widget script (like Elfsight, EmbedSocial, etc.), you can replace or paste it right here: -->
+            <!-- <div class="mt-5 text-center"> [Paste widget embed code here if applicable] </div> -->
         </div>
     </section>
 
