@@ -3,31 +3,19 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-    <title>Centre of Holistic Healings Art | Reiki & Crystal Healing</title>
+    <title>Centre Tour | Centre of Holistic Healings Art</title>
     <link rel="shortcut icon" type="image/x-icon" href="images/logo.PNG" />
     <!-- Bootstrap 5 CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- FontAwesome Icons -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Cinzel:wght@500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-
-    <!-- Google Calendar Appointment Scheduling CSS -->
-    <link href="https://calendar.google.com/calendar/scheduling-button-script.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
     <style>
         :root {
             --primary-gradient: linear-gradient(135deg, #1e0036 0%, #3a0066 50%, #6a11cb 100%);
-            --hero-overlay: linear-gradient(135deg, rgba(20, 5, 38, 0.88) 0%, rgba(46, 12, 88, 0.82) 50%, rgba(106, 17, 203, 0.75) 100%);
-            --accent-gradient: linear-gradient(135deg, #ff0844 0%, #ffb199 100%);
-            --btn-glow: linear-gradient(135deg, #f857a6 0%, #ff5858 100%);
-            --light-about-gradient: linear-gradient(135deg, #f3f0ff 0%, #e8f0fe 50%, #fdfbfb 100%);
-            --multicolor-border: linear-gradient(135deg, #a1c4fd 0%, #c2e9fb 50%, #ffd1ff 100%);
-            --gold-accent: #f39c12;
-            --bg-light: #f8f9fa;
-            --text-dark: #111111;
-            --nav-bg: #1e0036;
-            --violet-color: #6a11cb;
+            --light-bg-gradient: linear-gradient(135deg, #f3f0ff 0%, #e8f0fe 50%, #fdfbfb 100%);
             --navbar-height: 65px;
         }
 
@@ -37,23 +25,17 @@
 
         body {
             margin: 0;
-            padding-top: var(--navbar-height);
             font-family: 'Poppins', sans-serif;
-            color: var(--text-dark);
-            background-color: var(--bg-light);
+            padding-top: var(--navbar-height);
+            background-color: #f8f9fa;
             overflow-x: hidden;
+            color: #222222;
         }
 
         img, video {
             max-width: 100%;
             height: auto;
         }
-
-        .container, .container-fluid {
-            padding-left: 15px;
-            padding-right: 15px;
-        }
-        
 
         /* --- FIXED NAVBAR --- */
         .navbar {
@@ -90,7 +72,7 @@
             flex-shrink: 0;
         }
 
-        /* Mobile Overlay Menu */
+        /* Mobile Drawer Menu */
         @media (max-width: 991.98px) {
             .navbar-brand .nav-logo {
                 display: none;
@@ -185,357 +167,53 @@
             }
         }
 
-        /* --- HERO SECTION --- */
-        .hero-section {
-            background: var(--hero-overlay), 
-                        url('images/center10.JPG') center/cover no-repeat;
-            color: white;
-            padding: 70px 15px 80px;
+        /* --- HERO & GALLERY STYLES --- */
+        .tab-hero-header {
+            background: var(--primary-gradient);
+            padding: 50px 0 40px;
             text-align: center;
-            position: relative;
-            margin-top: 0 !important;
-        }
-
-        .hero-title {
-            color: #ffffff !important;
-            font-weight: 700;
-            text-shadow: 0 2px 10px rgba(0, 0, 0, 0.7);
-            letter-spacing: 0.5px;
-        }
-
-        .hero-text {
-            color: #f1f1f1 !important;
-            font-size: 1.05rem;
-            line-height: 1.7;
-            text-shadow: 0 2px 6px rgba(0, 0, 0, 0.8);
-            font-weight: 400;
-        }
-
-        .hero-text strong {
-            color: var(--gold-accent);
-            font-weight: 600;
-        }
-
-        .hero-text em {
-            color: #ffb199;
-            font-style: normal;
-            font-weight: 500;
-        }
-
-        .hero-logo-wrapper {
-            margin-bottom: 20px;
-            display: inline-block;
-        }
-
-        .hero-logo {
-            width: 110px;
-            height: 110px;
-            border-radius: 50%;
-            object-fit: cover;
-            border: 4px solid #ffb199;
-            background-color: #ffffff;
-            box-shadow: 0 0 20px rgba(255, 177, 153, 0.6), 0 8px 25px rgba(0, 0, 0, 0.5);
-            padding: 3px;
-        }
-
-        @media (max-width: 576px) {
-            .hero-section {
-                padding: 40px 12px 50px;
-            }
-            .hero-logo {
-                width: 85px;
-                height: 85px;
-            }
-            .hero-text {
-                font-size: 0.95rem;
-                line-height: 1.6;
-            }
-        }
-
-        .btn-animated {
-            background: var(--btn-glow);
-            color: white !important;
-            font-weight: 700;
-            padding: 12px 28px;
-            border-radius: 50px;
-            border: none;
-            box-shadow: 0 8px 25px rgba(248, 87, 166, 0.5);
-            animation: pulseMotion 2s infinite ease-in-out;
-            transition: transform 0.3s ease;
-            display: inline-block;
-            max-width: 100%;
-            white-space: normal;
-            text-decoration: none;
-        }
-
-        @keyframes pulseMotion {
-            0% { transform: scale(1); box-shadow: 0 0 0 0 rgba(248, 87, 166, 0.7); }
-            70% { transform: scale(1.04); box-shadow: 0 0 0 16px rgba(248, 87, 166, 0); }
-            100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(248, 87, 166, 0); }
-        }
-
-        /* --- SERVICES SECTION --- */
-        .services-wrapper-section {
-            background: linear-gradient(180deg, #f8f5ff 0%, #f3ebfc 50%, #faf0fc 100%);
-            padding: 60px 0 80px;
-            position: relative;
-        }
-
-        .services-header {
-            text-align: center;
-            margin-bottom: 40px;
-            position: relative;
-        }
-
-        .services-header .main-heading {
-            font-family: 'Alex Brush', cursive;
-            font-size: 4.8rem;
-            color: #1e0036;
-            margin-bottom: 0;
-            line-height: 1;
-            text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.8);
-        }
-
-        .services-header .sub-heading {
-            font-family: 'Cinzel', serif;
-            font-size: 1rem;
-            letter-spacing: 4px;
-            color: #6a11cb;
-            font-weight: 600;
-            margin-top: 5px;
-            text-transform: uppercase;
-        }
-
-        .services-header .lotus-divider {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 15px;
-            margin-top: 10px;
-        }
-
-        .services-header .lotus-divider::before,
-        .services-header .lotus-divider::after {
-            content: '';
-            width: 100px;
-            height: 1px;
-            background: #d1b8eb;
-        }
-
-        .services-header .lotus-divider i {
-            color: #6a11cb;
-            font-size: 1.2rem;
-        }
-
-        .service-card-v2 {
-            background: #ffffff;
-            border-radius: 20px;
-            border: 1px solid #e2d4f3;
-            padding: 14px;
-            box-shadow: 0 6px 18px rgba(106, 17, 203, 0.05);
-            transition: all 0.3s ease;
-            height: 100%;
-            display: flex;
-            align-items: center;
-        }
-
-        .service-card-v2:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 12px 25px rgba(106, 17, 203, 0.15);
-            border-color: #6a11cb;
-        }
-
-        .service-card-v2 .card-img-holder {
-            width: 42%;
-            aspect-ratio: 1 / 1;
-            border-radius: 14px;
-            overflow: hidden;
-            flex-shrink: 0;
-        }
-
-        .service-card-v2 .card-img-holder img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            border-radius: 14px;
-        }
-
-        .service-card-v2 .card-img-holder img.aura-img-fix {
-            object-position: top center;
-        }
-
-        .service-card-v2 .card-body-content {
-            width: 58%;
-            padding-left: 15px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-        }
-
-        .service-card-v2 .service-name {
-            font-family: 'Cinzel', serif;
-            font-weight: 600;
-            font-size: 1.05rem;
-            color: #1e0036;
-            line-height: 1.25;
-            margin-bottom: 10px;
-        }
-
-        .service-card-v2 .detail-item {
-            display: flex;
-            align-items: center;
-            gap: 8px;
-            margin-bottom: 6px;
-        }
-
-        .service-card-v2 .detail-icon {
-            width: 22px;
-            height: 22px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: #6a11cb;
-            font-size: 1.05rem;
-        }
-
-        .service-card-v2 .price-text {
-            font-weight: 700;
-            font-size: 1.2rem;
-            color: #111111;
-        }
-
-        .service-card-v2 .duration-text {
-            font-weight: 500;
-            font-size: 0.9rem;
-            color: #555555;
-        }
-
-        .btn-book-service {
-            background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
-            color: #ffffff !important;
-            font-size: 0.82rem;
-            font-weight: 600;
-            border: none;
-            padding: 6px 14px;
-            border-radius: 20px;
-            margin-top: 8px;
-            align-self: flex-start;
-            transition: all 0.3s ease;
-            box-shadow: 0 3px 10px rgba(106, 17, 203, 0.2);
-            text-decoration: none;
-            display: inline-block;
-        }
-
-        .btn-book-service:hover {
-            background: linear-gradient(135deg, #ff0844 0%, #ff5858 100%);
-            box-shadow: 0 4px 12px rgba(255, 8, 68, 0.3);
-            transform: translateY(-2px);
-        }
-
-        @media (max-width: 576px) {
-            .service-card-v2 {
-                flex-direction: column;
-                text-align: center;
-            }
-            .service-card-v2 .card-img-holder {
-                width: 100%;
-                max-width: 200px;
-                margin-bottom: 15px;
-            }
-            .service-card-v2 .card-body-content {
-                width: 100%;
-                padding-left: 0;
-                align-items: center;
-            }
-            .btn-book-service {
-                align-self: center;
-            }
-        }
-
-        /* --- ABOUT US SECTION (NO IMAGES OR PARAGRAPHS) --- */
-        .about-preview-section {
-            background: var(--light-about-gradient);
-            padding: 50px 0;
-            color: #000000;
-            border-top: 1px solid rgba(106, 17, 203, 0.08);
-            border-bottom: 1px solid rgba(106, 17, 203, 0.08);
-        }
-
-        /* --- CONTACT SECTION STYLING --- */
-        .contact-list-text {
-            font-size: 1.05rem;
-            color: #222222;
-            line-height: 2;
-        }
-        .contact-list-text a {
-            color: var(--violet-color);
-            text-decoration: none;
-            transition: color 0.2s ease;
-        }
-        .contact-list-text a:hover {
-            color: #ff0844;
-            text-decoration: underline;
-        }
-        .contact-icon {
-            width: 28px;
-            color: var(--violet-color);
-            font-size: 1.25rem;
-            text-align: center;
-            margin-right: 12px;
-        }
-
-        #calendar-booking-container {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 50px;
-            width: 100%;
-        }
-
-        /* --- GOOGLE CALENDAR POPUP CLOSE BUTTON & RESPONSIVENESS --- */
-        div[id^="gcal-scheduling-button-iframe"] {
-            z-index: 999999 !important;
-        }
-
-        .gcal-custom-close-btn {
-            position: fixed;
-            top: 20px;
-            right: 20px;
-            z-index: 1000000;
-            background: #1e0036;
             color: #ffffff;
-            border: 2px solid #ffb199;
-            border-radius: 50%;
-            width: 44px;
-            height: 44px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 20px;
-            cursor: pointer;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.4);
-            transition: all 0.2s ease-in-out;
+            box-shadow: inset 0 -10px 20px rgba(0, 0, 0, 0.15);
         }
 
-        .gcal-custom-close-btn:hover {
-            background: #ff0844;
-            transform: scale(1.1);
+        .gallery-item {
+            position: relative;
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+            background-color: #ffffff;
+            aspect-ratio: 4 / 3;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
 
-        @media (max-width: 768px) {
-            .gcal-custom-close-btn {
-                top: 10px;
-                right: 10px;
-                width: 38px;
-                height: 38px;
-                font-size: 16px;
-            }
+        .gallery-item:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 12px 25px rgba(106, 17, 203, 0.2);
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .gallery-caption {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: linear-gradient(180deg, transparent 0%, rgba(30, 0, 54, 0.85) 100%);
+            color: #ffffff;
+            padding: 12px 15px;
+            font-weight: 600;
+            font-size: 0.95rem;
+            text-align: center;
         }
     </style>
 </head>
 <body>
 
-    <!-- Fixed Header Navigation -->
+    <!-- Responsive Navigation Header -->
     <nav class="navbar navbar-expand-lg">
         <div class="container d-flex align-items-center justify-content-between">
             <a class="navbar-brand m-0" href="index.html">
@@ -560,293 +238,106 @@
                         <a class="nav-link" href="about.html">About & Gurus</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="experience.html">Student Experiences</a>
+                        <a class="nav-link active" href="center-tour.html">Center Tour</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="center-tour.html">Center Tour</a>
+                        <a class="nav-link" href="index.html#services">Services</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#services">Services</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#about-preview">About Us</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contact">Contact Us</a>
+                        <a class="nav-link" href="index.html#contact">Contact Us</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <header class="hero-section">
+    <!-- Page Hero Banner -->
+    <div class="tab-hero-header">
         <div class="container">
+            <h1 class="fw-bold fs-2 text-white mb-2"><i class="fa-solid fa-camera-retro me-2 text-warning"></i>Healing Center Gallery</h1>
+            <p class="lead fs-6 mb-0 text-light">Take a virtual tour through pictures and videos of our sacred healing space</p>
+        </div>
+    </div>
+
+    <!-- Main Content Area -->
+    <main class="container py-5">
+        <!-- Video Tour Section -->
+        <section class="mb-5">
+            <h3 class="fw-bold text-primary mb-4 border-bottom pb-2"><i class="fa-solid fa-video me-2"></i>Center Video Tour</h3>
             <div class="row justify-content-center">
-                <div class="col-12 col-lg-10 col-xl-9">
-                    <div class="hero-content-card">
-                        <div class="hero-logo-wrapper">
-                            <img src="images/logo.png" alt="Centre Logo" class="hero-logo" onerror="this.src='https://images.unsplash.com/photo-1518241353330-0f7941c2d9b5?auto=format&fit=crop&w=200&q=80'">
-                        </div>
-
-                        <h1 class="hero-title mb-3 fs-3 fs-md-1">Centre of Holistic Healings Art</h1>
-                        <p class="lead hero-text mb-4">
-                            <strong>Reiki</strong> means <em>Universal Life Force Energy</em> — the natural power living in all created matter. 
-                            <strong>'REI'</strong> represents boundless energy, and <strong>'KI'</strong> means life force. Everyone is born with Reiki, the pure essence of life itself.
-                        </p>
-                        <a href="about.html" class="btn btn-animated">
-                            Learn more<i class="fa-solid fa-arrow-right ms-2"></i>
-                        </a>
+                <div class="col-12 col-lg-8">
+                    <div class="ratio ratio-16x9 rounded-3 shadow overflow-hidden">
+                        <video controls poster="images/center1.jpeg">
+                            <source src="videos/center-tour.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
                     </div>
+                    <p class="text-dark text-center small mt-2">Walkthrough video of the Meditation & Reiki Healing Space.</p>
                 </div>
             </div>
-        </div>
-    </header>
+        </section>
 
-    <!-- Services Section -->
-    <section id="services" class="services-wrapper-section">
-        <div class="container">
-            <div class="services-header">
-                <h2 class="main-heading">Our Services</h2>
-                <div class="sub-heading">ENERGY FOR A BETTER TOMORROW</div>
-                <div class="lotus-divider">
-                    <i class="fa-solid fa-spa"></i>
-                </div>
-            </div>
-
+        <!-- Photo Gallery Section -->
+        <section>
+            <h3 class="fw-bold text-primary mb-4 border-bottom pb-2"><i class="fa-solid fa-images me-2"></i>Center Photos</h3>
             <div class="row g-3 g-md-4">
-                <!-- Service Cards -->
-                <div class="col-12 col-lg-6">
-                    <div class="service-card-v2">
-                        <div class="card-img-holder">
-                            <img src="images/service1.png" alt="In-Person Reiki Healing">
-                        </div>
-                        <div class="card-body-content">
-                            <div class="service-name">In-Person Reiki Healing</div>
-                            <div class="detail-item"><div class="detail-icon"><i class="fa-solid fa-coins"></i></div><div class="price-text">$60</div></div>
-                            <div class="detail-item"><div class="detail-icon"><i class="fa-regular fa-clock"></i></div><div class="duration-text">30 minutes</div></div>
-                            <a href="#contact" class="btn-book-service"><i class="fa-solid fa-calendar-check me-1"></i> Book Now</a>
-                        </div>
+                <div class="col-12 col-sm-6 col-md-4">
+                    <div class="gallery-item">
+                        <img src="images/center1.jpeg" alt="Meditation Space" onerror="this.src='https://images.unsplash.com/photo-1545205597-3d9d02c29597?auto=format&fit=crop&w=600&q=80'">
+                        <div class="gallery-caption">Meditation Space</div>
                     </div>
                 </div>
-
-                <div class="col-12 col-lg-6">
-                    <div class="service-card-v2">
-                        <div class="card-img-holder">
-                            <img src="images/service3.png" alt="In-Person Healing with Reiki & Crystals" onerror="this.src='https://images.unsplash.com/photo-1567225557594-88d73e55f2cb?auto=format&fit=crop&w=600&q=80'">
-                        </div>
-                        <div class="card-body-content">
-                            <div class="service-name">In-Person Healing with Reiki & Crystals</div>
-                            <div class="detail-item"><div class="detail-icon"><i class="fa-solid fa-coins"></i></div><div class="price-text">$90</div></div>
-                            <div class="detail-item"><div class="detail-icon"><i class="fa-regular fa-clock"></i></div><div class="duration-text">45 minutes</div></div>
-                            <a href="#contact" class="btn-book-service"><i class="fa-solid fa-calendar-check me-1"></i> Book Now</a>
-                        </div>
+                <div class="col-12 col-sm-6 col-md-4">
+                    <div class="gallery-item">
+                        <img src="images/center5.jpeg" alt="Reiki Attunement Room" onerror="this.src='https://images.unsplash.com/photo-1600334089648-b0d9d3028eb2?auto=format&fit=crop&w=600&q=80'">
+                        <div class="gallery-caption">Reiki Attunement Room</div>
                     </div>
                 </div>
-
-                <div class="col-12 col-lg-6">
-                    <div class="service-card-v2">
-                        <div class="card-img-holder">
-                            <img src="images/service2.png" alt="Healing with Counseling">
-                        </div>
-                        <div class="card-body-content">
-                            <div class="service-name">Healing with Counseling</div>
-                            <div class="detail-item"><div class="detail-icon"><i class="fa-solid fa-coins"></i></div><div class="price-text">$99</div></div>
-                            <div class="detail-item"><div class="detail-icon"><i class="fa-regular fa-clock"></i></div><div class="duration-text">1 hour</div></div>
-                            <a href="#contact" class="btn-book-service"><i class="fa-solid fa-calendar-check me-1"></i> Book Now</a>
-                        </div>
+                <div class="col-12 col-sm-6 col-md-4">
+                    <div class="gallery-item">
+                        <img src="images/center3.jpeg" alt="Crystal Sanctuary" onerror="this.src='https://images.unsplash.com/photo-1567225557594-88d73e55f2cb?auto=format&fit=crop&w=600&q=80'">
+                        <div class="gallery-caption">Crystal Sanctuary</div>
                     </div>
                 </div>
-
-                <div class="col-12 col-lg-6">
-                    <div class="service-card-v2">
-                        <div class="card-img-holder">
-                            <img src="images/service4.png" alt="Family Group Healing for 3 People">
-                        </div>
-                        <div class="card-body-content">
-                            <div class="service-name">Family Group Healing for 3 People</div>
-                            <div class="detail-item"><div class="detail-icon"><i class="fa-solid fa-coins"></i></div><div class="price-text">$120</div></div>
-                            <div class="detail-item"><div class="detail-icon"><i class="fa-regular fa-clock"></i></div><div class="duration-text">1 hour</div></div>
-                            <a href="#contact" class="btn-book-service"><i class="fa-solid fa-calendar-check me-1"></i> Book Now</a>
-                        </div>
+                <div class="col-12 col-sm-6 col-md-4">
+                    <div class="gallery-item">
+                        <img src="images/center4.jpeg" alt="Aura & Chakra Balancing Corner" onerror="this.src='https://images.unsplash.com/photo-1506126613408-eca07ce68773?auto=format&fit=crop&w=600&q=80'">
+                        <div class="gallery-caption">Aura & Chakra Corner</div>
                     </div>
                 </div>
-
-                <div class="col-12 col-lg-6">
-                    <div class="service-card-v2">
-                        <div class="card-img-holder">
-                            <img src="images/service5.png" alt="Family Group Healing with Counseling">
-                        </div>
-                        <div class="card-body-content">
-                            <div class="service-name">Family Group Healing with Counseling</div>
-                            <div class="detail-item"><div class="detail-icon"><i class="fa-solid fa-coins"></i></div><div class="price-text">$199</div></div>
-                            <div class="detail-item"><div class="detail-icon"><i class="fa-regular fa-clock"></i></div><div class="duration-text">90 minutes</div></div>
-                            <a href="#contact" class="btn-book-service"><i class="fa-solid fa-calendar-check me-1"></i> Book Now</a>
-                        </div>
+                <div class="col-12 col-sm-6 col-md-4">
+                    <div class="gallery-item">
+                        <img src="images/center8.jpeg" alt="Student Workshop Area" onerror="this.src='https://images.unsplash.com/photo-1518241353330-0f7941c2d9b5?auto=format&fit=crop&w=600&q=80'">
+                        <div class="gallery-caption">Student Workshop Area</div>
                     </div>
                 </div>
-
-                <div class="col-12 col-lg-6">
-                    <div class="service-card-v2">
-                        <div class="card-img-holder">
-                            <img src="images/service6.png" alt="Advanced Chakra Balancing with 7 Special Crystals" onerror="this.src='https://images.unsplash.com/photo-1506126613408-eca07ce68773?auto=format&fit=crop&w=600&q=80'">
-                        </div>
-                        <div class="card-body-content">
-                            <div class="service-name">Advanced Chakra Balancing with 7 Special Crystals</div>
-                            <div class="detail-item"><div class="detail-icon"><i class="fa-solid fa-coins"></i></div><div class="price-text">$99</div></div>
-                            <div class="detail-item"><div class="detail-icon"><i class="fa-regular fa-clock"></i></div><div class="duration-text">45 minutes</div></div>
-                            <a href="#contact" class="btn-book-service"><i class="fa-solid fa-calendar-check me-1"></i> Book Now</a>
-                        </div>
+                <div class="col-12 col-sm-6 col-md-4">
+                    <div class="gallery-item">
+                        <img src="images/center6.jpeg" alt="Healing Crystals Display" onerror="this.src='https://images.unsplash.com/photo-1515377905703-c4788e51af15?auto=format&fit=crop&w=600&q=80'">
+                        <div class="gallery-caption">Healing Crystals Display</div>
                     </div>
                 </div>
-
-                <div class="col-12 col-lg-6">
-                    <div class="service-card-v2">
-                        <div class="card-img-holder">
-                            <img src="images/service7.png" alt="Advanced Astral & Reiki Healing">
-                        </div>
-                        <div class="card-body-content">
-                            <div class="service-name">Advanced Astral & Reiki Healing</div>
-                            <div class="detail-item"><div class="detail-icon"><i class="fa-solid fa-coins"></i></div><div class="price-text">$120</div></div>
-                            <div class="detail-item"><div class="detail-icon"><i class="fa-regular fa-clock"></i></div><div class="duration-text">90 minutes</div></div>
-                            <a href="#contact" class="btn-book-service"><i class="fa-solid fa-calendar-check me-1"></i> Book Now</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-12 col-lg-6">
-                    <div class="service-card-v2">
-                        <div class="card-img-holder">
-                            <img src="images/service8.png" alt="Advanced Healing with Astral & Crystals" onerror="this.src='https://images.unsplash.com/photo-1567225557594-88d73e55f2cb?auto=format&fit=crop&w=600&q=80'">
-                        </div>
-                        <div class="card-body-content">
-                            <div class="service-name">Advanced Healing with Astral & Crystals</div>
-                            <div class="detail-item"><div class="detail-icon"><i class="fa-solid fa-coins"></i></div><div class="price-text">$180</div></div>
-                            <div class="detail-item"><div class="detail-icon"><i class="fa-regular fa-clock"></i></div><div class="duration-text">90 minutes</div></div>
-                            <a href="#contact" class="btn-book-service"><i class="fa-solid fa-calendar-check me-1"></i> Book Now</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-12 col-lg-6">
-                    <div class="service-card-v2">
-                        <div class="card-img-holder">
-                            <img src="images/service10.png" alt="Advanced Healing with Color Projection at the Astral Level" onerror="this.src='https://images.unsplash.com/photo-1515377905703-c4788e51af15?auto=format&fit=crop&w=600&q=80'">
-                        </div>
-                        <div class="card-body-content">
-                            <div class="service-name">Advanced Healing with Color Projection at the Astral Level</div>
-                            <div class="detail-item"><div class="detail-icon"><i class="fa-solid fa-coins"></i></div><div class="price-text">$230</div></div>
-                            <div class="detail-item"><div class="detail-icon"><i class="fa-regular fa-clock"></i></div><div class="duration-text">90 minutes</div></div>
-                            <a href="#contact" class="btn-book-service"><i class="fa-solid fa-calendar-check me-1"></i> Book Now</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-12 col-lg-6">
-                    <div class="service-card-v2">
-                        <div class="card-img-holder">
-                            <img src="images/service9.png" class="aura-img-fix" alt="Aura Reading & Reflection by The Master" onerror="this.src='https://images.unsplash.com/photo-1600334089648-b0d9d3028eb2?auto=format&fit=crop&w=600&q=80'">
-                        </div>
-                        <div class="card-body-content">
-                            <div class="service-name">Aura Reading & Reflection by The Master</div>
-                            <div class="detail-item"><div class="detail-icon"><i class="fa-solid fa-coins"></i></div><div class="price-text">$70</div></div>
-                            <a href="#contact" class="btn-book-service"><i class="fa-solid fa-calendar-check me-1"></i> Book Now</a>
-                        </div>
-                    </div>
-                </div>
-
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- ABOUT US SECTION -->
-    <section id="about-preview" class="about-preview-section">
-        <div class="container text-center">
-            <h2 class="section-title mb-4 fw-bold" style="color: #1e0036;">About Us</h2>
-            <a href="about.html" class="btn btn-primary rounded-pill px-4 py-2 font-weight-bold">
-                Learn More About Us & Our Gurus <i class="fa-solid fa-arrow-right ms-2"></i>
+        <!-- Navigation Action -->
+        <div class="text-center mt-5">
+            <a href="index.html" class="btn btn-primary rounded-pill px-4 py-2">
+                <i class="fa-solid fa-arrow-left me-2"></i> Return to Main Page
             </a>
         </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="py-5 bg-light">
-        <div class="container">
-            <h2 class="section-title text-center mb-4 fw-bold" style="color: #1e0036;">Contact Us</h2>
-            <div class="row justify-content-center">
-                <div class="col-12 col-md-10 col-lg-8">
-                    <div class="contact-list-text text-start text-sm-center px-2">
-                        <div class="mb-3 d-flex align-items-center justify-content-start justify-content-sm-center">
-                            <i class="fa-solid fa-phone contact-icon"></i>
-                            <span><strong>Phone:</strong> <a href="tel:+14039709104">+1 (403) 970-9104</a></span>
-                        </div>
-                        <div class="mb-3 d-flex align-items-center justify-content-start justify-content-sm-center text-break">
-                            <i class="fa-solid fa-envelope contact-icon"></i>
-                            <span><strong>Email:</strong> <a href="mailto:reikiholistichands@gmail.com">reikiholistichands@gmail.com</a></span>
-                        </div>
-                        <div class="mb-3 d-flex align-items-center justify-content-start justify-content-sm-center">
-                            <i class="fa-solid fa-location-dot contact-icon"></i>
-                            <span><strong>Address:</strong> 390 Redstone Blvd NE, Calgary, AB T3N 1K2</span>
-                        </div>
-                        <div class="mb-4 d-flex align-items-center justify-content-start justify-content-sm-center text-break">
-                            <i class="fa-brands fa-youtube contact-icon text-danger"></i>
-                            <span><strong>YouTube Channel:</strong> <a href="https://www.youtube.com/@reikiholistichands" target="_blank" rel="noopener noreferrer">Holistic Vibes</a></span>
-                        </div>
-
-                        <div class="mt-4 pt-2 text-center" id="calendar-booking-container"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+    </main>
 
     <!-- Footer -->
-    <footer class="bg-dark text-white py-4 text-center">
+    <footer class="bg-dark text-white py-4 text-center mt-auto">
         <div class="container">
             <p class="mb-0 small">&copy; <a href="https://reikiholistichands.com/" class="text-white text-decoration-none">Centre of Holistic Healings Art.</a> All Rights Reserved.</p>
         </div>
     </footer>
 
-    <!-- Scripts -->
+    <!-- Bootstrap 5 JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://calendar.google.com/calendar/scheduling-button-script.js" async></script>
     <script>
-        window.addEventListener('load', function() {
-            const container = document.getElementById('calendar-booking-container');
-            if (container) {
-                calendar.schedulingButton.load({
-                    url: 'https://calendar.google.com/calendar/appointments/schedules/AcZssZ1cbK5ymG9DAQdDMXq4g3Q9gPGg7F8PtIDDIHVLgayeiK4Ig9aX4IzZ82PiCiyJqCFYtk9Ob_s6?gv=true',
-                    color: '#ff5858',
-                    label: 'Book an Appointment',
-                    target: container
-                });
-            }
-
-            // MutationObserver to safely attach a responsive close button to the Google Calendar booking pop-up frame on laptops and mobile devices
-            const observer = new MutationObserver((mutations, obs) => {
-                const iframeContainer = document.querySelector('div[id^="gcal-scheduling-button-iframe"]');
-                if (iframeContainer) {
-                    if (!iframeContainer.querySelector('.gcal-custom-close-btn')) {
-                        const closeBtn = document.createElement('div');
-                        closeBtn.className = 'gcal-custom-close-btn';
-                        closeBtn.innerHTML = '<i class="fa-solid fa-xmark"></i>';
-                        closeBtn.setAttribute('title', 'Close Booking Window');
-                        
-                        closeBtn.addEventListener('click', function() {
-                            iframeContainer.remove();
-                        });
-
-                        iframeContainer.appendChild(closeBtn);
-                    }
-                }
-            });
-
-            observer.observe(document.body, {
-                childList: true,
-                subtree: true
-            });
-        });
-
         function toggleMobileMenu() {
             const navMenu = document.getElementById('mobileNavMenu');
             const icon = document.getElementById('menuToggleIcon');
